@@ -14,7 +14,21 @@ fun sum(x: Int, y: Int): Int { // 3
 
 fun multiply(x: Int, y: Int) = x * y // 4
 
+fun printALL(vararg message: String) {
+    for (m in message) println(m)
+}
+fun printAllWithPrefix(vararg message: String, prefix: String) {
+    for (m in message) println(prefix + m)
+}
+
 fun main() {
+    printAllWithPrefix(
+        "kelve",
+        "junior",
+        prefix = "greting: ",
+    )
+
+    printALL("kelve", "junior")
     printMessage("Hello") // 5
     printMessageWithPrefix("Hello", "Log") // 6
     printMessageWithPrefix("Hello") // 7
