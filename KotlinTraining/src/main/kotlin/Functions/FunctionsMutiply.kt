@@ -21,7 +21,15 @@ fun printAllWithPrefix(vararg message: String, prefix: String) {
     for (m in message) println(prefix + m)
 }
 
+fun nullVar(nome: String?) {
+    println(nome)
+}
+
 fun main() {
+    var nullTeste = null
+
+    nullVar(nullTeste)
+
     printAllWithPrefix(
         "kelve",
         "junior",
