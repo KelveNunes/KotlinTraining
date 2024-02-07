@@ -1,4 +1,5 @@
-
+package Functions // ktlint-disable package-name
+// ktlint-disable package-name
 
 fun printMessage(message: String) { // 1
     println(message)
