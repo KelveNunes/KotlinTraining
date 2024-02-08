@@ -15,10 +15,3 @@ class WhenStatement {
         return result
     }
 }
-
-
-
-fun main(){
-    println(WhenStatement().whenAssing(2,1))
-
-}

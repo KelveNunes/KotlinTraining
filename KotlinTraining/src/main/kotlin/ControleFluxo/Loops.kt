@@ -9,7 +9,3 @@ class Loops {
         }
 
 }
-
-fun main(){
-    println(Loops().loops())
-}
