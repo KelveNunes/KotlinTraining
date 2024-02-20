@@ -19,5 +19,17 @@ CREATE TABLE reservas(
    nome VARCHAR(255) not NULL UNIQUE COMMENT'Nome de destino',
    descricao VARCHAR(255) not NULL COMMENT'descrição do destino');
    
+   INSERT INTO usuarios(id, nome,email, data_nascomento,endereco) 
+   VALUES("1", "kelve", "kelvenunes123@gmail.com", '1995-04-12', "rua dos caralhos");
+   
+   SELECT * FROM usuarios
+   SELECT * FROM destinos
+   SELECT * FROM reservas
+   
+   INSERT INTO destinos(id, nome, descricao) VALUES(1, "JP", "praias");
+   
+   INSERT INTO reservas(id, id_usuario, id_destino, status, data_reserva) 
+   VALUES(1,1,1,"pendente","2024-02-20");
+   
    
     
