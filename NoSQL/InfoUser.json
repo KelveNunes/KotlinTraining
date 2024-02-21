@@ -1,0 +1,13 @@
+{
+   "_id":"1",
+   "nome":"kelve nunes",
+   "idade":"30",
+   "data_nascimento":"1995-12-04",
+   "endereco":"Rua Manoel Alves de Lucena, 24",
+   "enderecos":[
+      {
+         "logradouro":"Manoel Alves de lucena",
+         "numero":"24"
+      }
+   ]
+}
