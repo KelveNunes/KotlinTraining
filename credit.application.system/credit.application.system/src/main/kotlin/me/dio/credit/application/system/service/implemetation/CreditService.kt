@@ -21,9 +21,8 @@ class CreditService(
         return this.creditRepository.save(credit)
     }
 
-    override fun findAllByCustomer(customerID: Long): List<Credit> {
-        this.creditRepository.findById(customerID).
-    }
+    override fun findAllByCustomer(customerID: Long): List<Credit> =
+        this.creditRepository.findAllByCustomerId(customerID)
 
     override fun findByCreditCode(creditCode: UUID, customerId: Long): Credit {
         var credit: Credit = this.creditRepository.findByCreditCode(creditCode)
