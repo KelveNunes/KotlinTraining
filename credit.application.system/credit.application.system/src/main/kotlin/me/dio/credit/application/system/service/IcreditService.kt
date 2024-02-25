@@ -6,5 +6,5 @@ import java.util.*
 interface IcreditService {
     fun save(credit: Credit): Credit
     fun findAllByCustomer (customerID: Long): List<Credit>
-    fun findByCreditCode ( creditCode: UUID, customerID: Long): Credit
+    fun findByCreditCode (customerID: Long, creditCode: UUID ): Credit
 }
