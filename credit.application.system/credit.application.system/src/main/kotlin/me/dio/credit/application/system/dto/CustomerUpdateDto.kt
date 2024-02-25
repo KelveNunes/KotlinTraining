@@ -7,7 +7,7 @@ data class CustomerUpdateDto(
     val firstName: String,
     val lastName: String,
     val income: BigDecimal,
-    val zipCode: String,
+    val zipCod: String,
     val street: String
 ) {
     fun toEntity(customer: Customer): Customer{
@@ -15,7 +15,7 @@ data class CustomerUpdateDto(
         customer.lastName = this.lastName
         customer.income = this.income
         customer.address.street = this.street
-        customer.address.zipCode = this.zipCode
+        customer.address.zipCod = this.zipCod
         return customer
     }
 }

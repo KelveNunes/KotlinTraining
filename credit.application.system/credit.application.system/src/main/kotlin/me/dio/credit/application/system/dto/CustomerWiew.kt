@@ -9,7 +9,7 @@ data class CustomerWiew(
     val cpf: String,
     val income: BigDecimal,
     val email: String,
-    val zipCode: String,
+    val zipCod: String,
     val street: String
 ) {
     constructor(customer: Customer): this(
@@ -18,7 +18,7 @@ data class CustomerWiew(
         cpf = customer.cpf,
         income = customer.income,
         email = customer.email,
-        zipCode = customer.address.zipCode,
+        zipCod = customer.address.zipCod,
         street = customer.address.street
     )
 }

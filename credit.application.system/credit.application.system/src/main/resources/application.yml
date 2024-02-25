@@ -5,9 +5,9 @@ spring:
     password: 1234
   jpa:
     show-sql:  true
-    hibernate:
-      propeties:
-        hibernate.format_sql: true
+    #hibernate:
+    propeties:
+      hibernate.format_sql: true
 
   h2:
     console:

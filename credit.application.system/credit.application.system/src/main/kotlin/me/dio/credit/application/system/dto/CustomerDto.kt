@@ -11,7 +11,7 @@ data class CustomerDto(
     val income: BigDecimal,
     val email: String,
     val password: String,
-    val zipCode: String,
+    val zipCod: String,
     val street: String
 
 ){
@@ -23,7 +23,7 @@ data class CustomerDto(
         email = this.email,
         password = this.password,
         address = Address(
-            zipCode = this.zipCode,
+            zipCod = this.zipCod,
             street = this.street
         )
 

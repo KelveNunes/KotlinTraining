@@ -1,4 +1,4 @@
-package me.dio.credit.application.system.controller.dto
+package me.dio.credit.application.system.dto
 
 import me.dio.credit.application.system.entity.Credit
 import me.dio.credit.application.system.enummeration.Status
@@ -8,7 +8,7 @@ import java.util.UUID
 data class CreditView(
     val creditCode: UUID,
     val creditValue: BigDecimal,
-    val numerOfIntallments: Int,
+    val numerOfIntallment: Int,
     val status: Status,
     val emailCustomer: String?,
     val incomeCustomer: BigDecimal?
@@ -17,7 +17,7 @@ data class CreditView(
     constructor(credit: Credit): this(
         creditCode = credit.creditCode,
         creditValue = credit.creditValue,
-        numerOfIntallments = credit.numberOfIntallments,
+        numerOfIntallment = credit.numberOfIntallment,
         status = credit.status,
         emailCustomer = credit.customer?.email,
         incomeCustomer = credit.customer?.income
