@@ -4,8 +4,11 @@ spring:
     username: kelve
     password: 1234
   jpa:
+    show-sql:  true
     hibernate:
-      ddl-auto: create-drop
+      propeties:
+        hibernate.format_sql: true
+
   h2:
     console:
       enabled: true
