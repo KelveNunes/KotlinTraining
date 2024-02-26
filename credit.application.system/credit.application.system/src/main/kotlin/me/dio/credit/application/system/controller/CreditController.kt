@@ -29,7 +29,8 @@ class CreditController(
             .body("Credit ${credit.creditCode} - Customer${credit.customer?.firstName} saved")
     }
     @GetMapping
-    fun findAllByCustomerId(@RequestParam(value = "customerId") customerId: Long): ResponseEntity<List<CreditViewList>>{
+    fun findAllByCustomerId(@RequestParam(value = "customerId") customerId: Long):
+            ResponseEntity<List<CreditViewList>>{
         val creditViewList: List<CreditViewList> = this.creditService.findAllByCustomer(customerId).stream()
             .map{ credit: Credit -> CreditViewList(credit) }
             .collect(Collectors.toList())
