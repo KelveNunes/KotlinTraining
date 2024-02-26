@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url/: jdbc:h2:mem:credit_application_system_db
+    url: jdbc:h2:mem:credit_application_system_db
     username: kelve
     password: 1234
   jpa:
@@ -16,3 +16,7 @@ spring:
       settings:
         trace: false
         web-allow-others: false
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
